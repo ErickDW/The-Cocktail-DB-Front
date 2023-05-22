@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'The-Cocktail-DB-Front';
+  title = 'The Cocktail';
+  noShowNavbarIn = new Set<string>([
+    '/auth/login',
+    '/auth/register',]
+  )
 
-  DerOrIzq : boolean = false;
+  constructor(private router: Router) { }
+
+  showNavbar(): boolean {
+    const currentUrl = this.router.url;
+    return !this.noShowNavbarIn.has(currentUrl);
+  }
 }

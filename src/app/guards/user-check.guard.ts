@@ -1,15 +1,12 @@
-import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class UserCheckGuard implements CanActivate {
-  canActivate(
-    route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    return true;
+export const UserCheckGuard: CanActivateFn = (route: Router) => {
+  route = new Router();
+  if(false){
+    route.navigate(['/cocktail/home']);
+    return false;
   }
-  
-}
+  return true;
+};
+
+type CanActivateFn = (route: Router) => {};
