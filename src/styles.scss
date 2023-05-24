@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~variables.scss';
+
+@font-face {
+	font-family: Mulish-VariableFont_wght;
+	src: url('./assets/fonts/Mulish-VariableFont_wght.ttf') format(truetype);
+}
+
+*{
+  margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: Mulish-VariableFont_wght;
+}
+
+body{
+	font-family: Mulish-VariableFont_wght;
+	background: $background_color;
+	color: $text_color;
+}

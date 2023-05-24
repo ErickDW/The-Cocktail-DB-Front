@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-option-circle.component.scss'],
 })
 export class CardOptionCircleComponent {
-  DerOrIzq: boolean = false;
 }

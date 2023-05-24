@@ -1,1 +1,48 @@
 @import '../../../../~variables.scss';
+
+.container_img {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 950px;
+  min-height: 400px;
+
+  img{
+    width: 100%;
+    height: 100%;
+    max-width: 950px;
+    padding: 50px 20px 0px 20px;
+  }
+}
+
+.container_list {
+  position: relative;
+  z-index: 1;
+
+  // width: 800px;
+  // display: grid;
+	// gap: 10px;
+	// grid-template-columns: repeat(auto-fill, minmax( 240px, 1fr));
+
+  width: 950px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.paco{
+  // width: 250px;
+}
+
+.container_drinklist {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  margin-top: 2rem;
+}
+
