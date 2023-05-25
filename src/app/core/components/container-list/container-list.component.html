@@ -4,41 +4,30 @@
       src="../../../../assets/containers/containerGenDer.png"
       alt=""
       *ngIf="!DerOrIzq"
+      class="background_img_der"
     />
     <img
       src="../../../../assets/containers/containerGenIzq.png"
       alt=""
       *ngIf="DerOrIzq"
+      class="background_img_izq"
     />
-
   </div>
 
-  <div class="container_list">
-    <div class="paco">
-      <app-circle></app-circle>
-    </div>
-    <div class="paco">
-      <app-circle></app-circle>
-    </div>
-    <div class="paco">
-      <app-circle></app-circle>
-    </div>
-    <div class="paco">
-      <app-circle></app-circle>
-    </div>
-    <div class="paco">
-      <app-circle></app-circle>
-    </div>
-    <div class="paco">
-      <app-circle></app-circle>
-    </div>
-    <div class="paco">
-      <app-circle></app-circle>
-    </div>
-    <div class="paco">
-      <app-circle></app-circle>
-    </div>
+  <div
+    class="container_list"
+    [ngClass]="{
+      'container_list_flex': !DerOrIzq,
+      'container_list_grid': DerOrIzq
+    }"
+  >
+    <app-circle></app-circle>
+    <app-circle></app-circle>
+    <app-circle></app-circle>
+    <app-circle></app-circle>
+    <app-circle></app-circle>
+    <app-circle></app-circle>
+    <app-circle></app-circle>
+    <app-circle></app-circle>
   </div>
-
-
 </div>

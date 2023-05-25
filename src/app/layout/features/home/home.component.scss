@@ -1,0 +1,17 @@
+.container_imgs_background{
+  width: 100%;
+
+  background-image:
+    url('../../../../assets/background/Limon-amarillo-fondo.png'),
+    url('../../../../assets/background/tonic-fondo.png'),
+    url('../../../../assets/background/miel-fondo.png'),
+    url('../../../../assets/background/gin-fondo.png'),
+    url('../../../../assets/background/fizz-fondo.png'),
+    url('../../../../assets/background/Rhum-fondo.png'),
+    url('../../../../assets/background/Fondo-limon.png'),
+    url('../../../../assets/background/Fondo-coctel.png');
+
+  background-repeat: no-repeat;
+  background-position: right 10lh, left 30lh, right 50lh, left 70lh, right 75lh, left 100lh, right 140lh, left 180lh;
+  background-size: auto;
+}
