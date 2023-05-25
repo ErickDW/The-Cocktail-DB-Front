@@ -1,0 +1,80 @@
+@import '../../../../~variables.scss';
+
+.navbar {
+  padding: 0 12%;
+  align-items: center;
+  gap: 60px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container_features_and_search {
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+  justify-content: flex-start;
+}
+
+.container_features {
+  justify-content: flex-start;
+  width: 100%;
+  gap: 60px;
+}
+
+.container_search_and_bookmark {
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.search {
+  gap: 5px;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  padding: 8px;
+  box-shadow: 0px 5px 8px -5px rgba(0, 0, 0, 0.75);
+  width: 130px;
+
+  input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width:950px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 0 5%;
+    gap: 20px;
+  }
+
+  .logo,
+  .container_features_and_search {
+    width: 100%;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+}
+
+@media (max-width:550px) {
+
+  .container_features,
+  .container_search_and_bookmark {
+    justify-content: center;
+  }
+
+  .container_features_and_search {
+    flex-wrap: wrap;
+  }
+}

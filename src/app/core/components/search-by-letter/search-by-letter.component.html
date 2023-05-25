@@ -1,0 +1,10 @@
+<br>
+<div class="container_alphabet">
+  <p>Browse By Name</p>
+  <ul class="flx">
+    <li *ngFor="let item of alphabet; let indexOfelement = index" class="flx">
+      <a>{{item}}</a>
+      <p *ngIf="indexOfelement < alphabet.length - 1">/</p>
+    </li>
+  </ul>
+</div>

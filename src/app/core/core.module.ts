@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { FooterComponent } from './components/footer/footer.component';
-import { CardOptionCircleComponent } from './components/card-option-circle/card-option-circle.component';
+import { SearchByLetterComponent } from './components/search-by-letter/search-by-letter.component';
 import { CardCircleComponent } from './components/card-circle/card-circle.component';
 import { CircleComponent } from './components/circle/circle.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -13,7 +13,7 @@ import { ContainerIngredientsComponent } from './components/container-ingredient
 @NgModule({
   declarations: [
     FooterComponent,
-    CardOptionCircleComponent,
+    SearchByLetterComponent,
     CardCircleComponent,
     CircleComponent,
     NavbarComponent,
@@ -23,7 +23,7 @@ import { ContainerIngredientsComponent } from './components/container-ingredient
   imports: [CommonModule, RouterModule],
   exports: [
 		FooterComponent,
-    CardOptionCircleComponent,
+    SearchByLetterComponent,
     CardCircleComponent,
     CircleComponent,
     NavbarComponent,

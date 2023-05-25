@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./drink-details.component.scss']
 })
 export class DrinkDetailsComponent {
-
+  title = 'Egg Nog #4';
 }

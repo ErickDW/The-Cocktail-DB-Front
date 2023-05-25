@@ -1,0 +1,36 @@
+@import '../../../../~variables.scss';
+
+footer{
+  color: white;
+  background-color: $primary_color;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  align-items: center;
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  .containet_copy{
+    width: 100%;
+    min-width: 300px;
+  }
+
+  ul{
+    justify-content: flex-end;
+    gap: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width:750px) {
+  footer{
+    flex-wrap: wrap-reverse;
+    padding: 1rem 0rem;
+    .containet_copy{
+      text-align: center;
+    }
+    ul{
+      justify-content: center;
+    }
+  }
+}

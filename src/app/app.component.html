@@ -1,8 +1,3 @@
-<div class="container_drinklist">
-  <div class="container_img">
-    <img src="../assets/containers/RectangleDer.png" alt="" *ngIf="DerOrIzq" />
-    <img src="../assets/containers/RectangleIzq.png" alt="" *ngIf="!DerOrIzq" />
-  </div>
-
-  <!-- <h1>paco</h1> -->
-</div>
+<app-navbar *ngIf="showNavbar()"></app-navbar>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

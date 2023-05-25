@@ -1,1 +1,26 @@
-<p>drink-details works!</p>
+<div class="container_general_ingredients flx">
+  <div class="container_circle">
+    <h1>{{ title }}</h1>
+    <app-circle></app-circle>
+  </div>
+  <div class="container_ingredients">
+    <app-container-ingredients></app-container-ingredients>
+  </div>
+</div>
+<br />
+<div class="container_next_recipe flx">
+  <button class="rippleDark">
+    <img
+      src="../../../../assets/icons/Vector 1.png"
+      alt="<"
+      [ngStyle]="{'transform': 'scaleX(-1)'}"
+    />
+  </button>
+  <h3>Next recipe</h3>
+  <button class="rippleDark"><img src="../../../../assets/icons/Vector 1.png" alt=">" /></button>
+</div>
+<br />
+<!-- <div class="container_instructions">
+  <app-container-ingredients></app-container-ingredients>
+</div> -->
+<app-search-by-letter></app-search-by-letter>
