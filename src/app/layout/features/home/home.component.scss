@@ -1,6 +1,93 @@
+@import '../../../../~variables.scss';
+
+
+.container_section_principal{
+  display: flex;
+  gap:50px;
+  justify-content: space-evenly;
+  padding: 0 12%;
+  margin-bottom: 5rem;
+
+  background-image: url('../../../../assets/others/Lineas-fondo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .container_info_principal{
+    width: 30%;
+    min-width: 285px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    article{
+      h1{
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 20px;
+      }
+      p{
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+    }
+    button{
+      width: 140px;
+      height: 40px  ;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      span{
+        background-color: $blue_color-dark;
+        border-radius: 100%;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          width: 8px;
+        }
+      }
+    }
+  }
+  .container_img_pricipal{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    min-width: 350px;
+    max-height: 350px;
+
+    .container_img_sub{
+      background-color: $blue_color-high;
+      width: 100%;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+      background-image:
+        url('../../../../assets/background/Fruta-roja-centro.png'),
+        url('../../../../assets/others/Palitos-cafe-centro.png');
+      background-repeat: no-repeat;
+      background-position: left 10rem, right bottom;
+      img{
+        width: 150px;
+      }
+
+    }
+  }
+
+  .container_minicards{
+    width: 30%;
+    min-width: 260px;
+  }
+
+}
+
 .container_imgs_background{
   width: 100%;
-
   background-image:
     url('../../../../assets/background/Limon-amarillo-fondo.png'),
     url('../../../../assets/background/tonic-fondo.png'),
@@ -12,6 +99,29 @@
     url('../../../../assets/background/Fondo-coctel.png');
 
   background-repeat: no-repeat;
-  background-position: right 10lh, left 30lh, right 50lh, left 70lh, right 75lh, left 100lh, right 140lh, left 180lh;
+  background-position:
+    right 10lh,
+    left 30lh,
+    right 50lh,
+    left 70lh,
+    right 75lh,
+    left 100lh,
+    right 140lh,
+    left 180lh;
   background-size: auto;
+}
+
+
+@media (max-width:1050px) {
+  .container_section_principal{
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width:900px) {
+  .container_info_principal{
+    button{
+      margin: auto;
+    }
+  }
 }

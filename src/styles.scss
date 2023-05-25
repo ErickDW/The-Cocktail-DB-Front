@@ -1,30 +1,72 @@
 @import '~variables.scss';
 
 @font-face {
-	font-family: Mulish-VariableFont_wght;
-	src: url('./assets/fonts/Mulish-VariableFont_wght.ttf') format(truetype);
+  font-family: Mulish-VariableFont_wght;
+  src: url('./assets/fonts/Mulish-VariableFont_wght.ttf') format(truetype);
 }
 
-*{
+* {
   margin: 0;
-	padding: 0;
-	text-decoration: none;
-	list-style: none;
-	box-sizing: border-box;
-	font-family: Mulish-VariableFont_wght;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Mulish-VariableFont_wght;
 }
 
-body{
-	font-family: Mulish-VariableFont_wght;
-	background: $background_color;
-	color: $text_color;
+body {
+  font-family: Mulish-VariableFont_wght;
+  background: $background_color;
+  color: $text_color;
+  position: relative;
+  padding-bottom: 8rem;
+  min-height: 100vh;
 }
 
-.flx{
+.flx {
   display: flex;
   gap: 20px;
 }
 
+
+li {
+  a {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+button {
+  border-radius: 100px;
+  border: none;
+  font-weight: bold;
+  background-color: $blue_color-high;
+  cursor: pointer;
+  box-shadow: 0px 5px 8px -5px rgba(0, 0, 0, 0.75);
+  padding: 0 15px;
+}
+
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+
+  &:hover {
+    background-color: $ripple1;
+    background-image: radial-gradient(circle, transparent 1%, $ripple1 1%);
+    background-position: center;
+    background-size: 15000%;
+  }
+
+  &:active {
+    transition: background 0s;
+    background-color: $ripple2;
+    background-size: 100%;
+  }
+
+}
 
 // @media (max-width:500px) {
 

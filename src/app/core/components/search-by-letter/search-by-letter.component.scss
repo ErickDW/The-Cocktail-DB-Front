@@ -1,0 +1,25 @@
+@import '../../../../~variables.scss';
+
+.container_alphabet{
+  border-top: solid 5px $primary_color;
+  font-weight: bold;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 2rem;
+  p{
+    color: $primary_color;
+  }
+
+  ul{
+    justify-content: center;
+    gap: 2px;
+    li{
+      gap: 2px;
+    }
+  }
+}
