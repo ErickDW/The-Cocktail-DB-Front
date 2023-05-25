@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { StyleCircle, circleComponentDefault } from 'src/app/interfaces/style-circle.interface';
+import { StyleCircle, circleComponentDefault, circleComponentOther} from 'src/app/interfaces/style-circle.interface';
 
 @Component({
   selector: 'app-circle',
@@ -10,7 +10,7 @@ export class CircleComponent {
   optiopnImg1 = '../../../../assets/icons/plus.png';
   optiopnImg2 = '../../../../assets/icons/Vector 1.png';
 
-  styleInput : StyleCircle = circleComponentDefault;
+  styleInput : StyleCircle = circleComponentOther;
 
   optionImg(): string {
     this.styleInput.tam

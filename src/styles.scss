@@ -68,6 +68,25 @@ button {
 
 }
 
+.rippleDark {
+  background-position: center;
+  transition: background 0.8s;
+
+  &:hover {
+    background-color: $rippleDark1;
+    background-image: radial-gradient(circle, transparent 1%, $rippleDark1 1%);
+    background-position: center;
+    background-size: 15000%;
+  }
+
+  &:active {
+    transition: background 0s;
+    background-color: $rippleDark2;
+    background-size: 100%;
+  }
+
+}
+
 // @media (max-width:500px) {
 
 // }

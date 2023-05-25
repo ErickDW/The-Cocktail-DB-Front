@@ -1,1 +1,61 @@
-<p>container-ingredients works!</p>
+<div
+  class="container_drinklist"
+  [ngStyle]="
+    DerOrIzq
+      ? { 'justify-content': 'flex-start' }
+      : { 'justify-content': 'flex-end' }
+  "
+>
+  <div
+    class="container_img"
+    [ngStyle]="
+      DerOrIzq
+        ? { 'max-width': '1000px' }
+        : { 'max-width': '950px', 'padding-left': '120px' }
+    "
+  >
+    <img
+      src="../../../../assets/containers/container-blue/containerBlueDer.png"
+      alt=""
+      *ngIf="!DerOrIzq"
+      class="background_img"
+    />
+    <img
+      src="../../../../assets/containers/container-blue/containerBlueIzq.png"
+      alt=""
+      *ngIf="DerOrIzq"
+      class="background_img"
+    />
+  </div>
+
+  <div
+    class="container_list"
+    [ngClass]="{
+      'container_list_flex': !DerOrIzq,
+    }"
+  >
+    <app-circle *ngIf="!DerOrIzq"></app-circle>
+    <app-circle *ngIf="!DerOrIzq"></app-circle>
+    <app-circle *ngIf="!DerOrIzq"></app-circle>
+    <app-circle *ngIf="!DerOrIzq"></app-circle>
+    <app-circle *ngIf="!DerOrIzq"></app-circle>
+    <app-circle *ngIf="!DerOrIzq"></app-circle>
+
+    <div class="container_data flx" *ngIf="DerOrIzq">
+      <article>
+        <h3>Instructions</h3>
+        <div class="instruction">
+          <p *ngFor="let item of dataInstructions; let indexOfelement = index">
+            {{ indexOfelement + 1 }}. {{ item }}
+          </p>
+        </div>
+        <p *ngIf="note" class="note">Note: {{ note }}</p>
+      </article>
+      <div class="container_flags flx">
+        <img src="../../../../assets/flags/USA.png" alt="USA" />
+        <img src="../../../../assets/flags/belgium.png" alt="Belgium" />
+        <img src="../../../../assets/flags/spain.png" alt="Spain" />
+      </div>
+    </div>
+  </div>
+</div>

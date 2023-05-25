@@ -1,5 +1,5 @@
-<div class="full_content_circle" [ngStyle]="{ 'width': styleInput.tam }">
-  <div class="content_circle" [ngStyle]="{ 'height': styleInput.tam }">
+<div class="full_content_circle" [ngStyle]="{ width: styleInput.tam }">
+  <div class="content_circle" [ngStyle]="{ height: styleInput.tam }">
     <div class="content_svg">
       <svg viewBox="0 0 100 100">
         <path d="M 0,50 a 50,50 0 1,1 0,1 z" id="circle" />
@@ -12,13 +12,16 @@
     </div>
     <div
       class="content_img"
-      [ngStyle]="{ 'border-color': styleInput.borderColor }"
+      [ngStyle]="{
+        'border-color': styleInput.borderColor,
+        background: styleInput.background
+      }"
     >
       <img [src]="styleInput.img.imgUrl" [alt]="styleInput.img.altImg" />
     </div>
   </div>
   <div class="content_info" *ngIf="styleInput.action.description">
-    <h3 [ngStyle]="{ 'color': styleInput.action.colorTitleDescription }">
+    <h3 [ngStyle]="{ color: styleInput.action.colorTitleDescription }">
       {{ styleInput.action.titleDescription }}
     </h3>
     <a *ngIf="styleInput.action.content">
